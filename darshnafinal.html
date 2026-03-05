@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Family Trip - Ayodhya & Kashi Darshan</title>
+
+<style>
+
+body{
+font-family:Arial;
+background-image:url("rammandir.jpg");
+background-size:cover;
+background-repeat:no-repeat;
+background-attachment:fixed;
+}
+
+.container{
+background:rgba(255,255,255,0.95);
+width:1000px;
+margin:auto;
+padding:20px;
+border-radius:10px;
+margin-top:40px;
+}
+
+h1{
+color:#b30000;
+text-align:center;
+}
+
+.section{
+margin-top:15px;
+font-size:17px;
+}
+
+ul{
+text-align:left;
+line-height:1.6;
+}
+
+table{
+margin-top:20px;
+border-collapse:collapse;
+width:100%;
+}
+
+th,td{
+border:1px solid black;
+padding:8px;
+text-align:left;
+}
+
+th{
+background:#f2f2f2;
+}
+
+input{
+width:95%;
+padding:5px;
+}
+
+button{
+margin-top:20px;
+padding:12px 30px;
+background:#b30000;
+color:white;
+border:none;
+font-size:16px;
+cursor:pointer;
+border-radius:5px;
+}
+
+</style>
+
+<script>
+
+function sendWhatsApp(){
+
+var message="Family Trip – Ayodhya & Kashi Darshan %0A%0A";
+
+message+="Travel Plan:%0A";
+message+="14 Mar BLR to Lucknow 7:50 AM%0A";
+message+="Lucknow to Ayodhya by TT Urbannia%0A";
+message+="Darshan at Ram Temple 14 Mar Evening%0A";
+message+="Overnight stay at Hotel Ramanjeneya Ayodhya%0A";
+message+="15 Mar drive to Kashi, visit Sarnath%0A";
+message+="Check-in at Southern Grand%0A";
+message+="Evening Kala Bhairava Temple%0A";
+message+="16 Mar Kashi Temple Sparsh Darshan 4 AM%0A";
+message+="16 Mar Ganga Aarti 5 PM%0A";
+message+="17 Mar Kashi Temple Darshan%0A";
+message+="17 Mar Return flight 4:30 PM (Kashi to BLR 7 PM)%0A%0A";
+
+for(var i=1;i<=13;i++){
+
+var name=document.getElementById("name"+i).value;
+var aadhar=document.getElementById("aadhar"+i).value;
+var phone=document.getElementById("phone"+i).value;
+
+if(name!=""){
+message+="SL NO: "+i+"%0A";
+message+="Name: "+name+"%0A";
+message+="Aadhar: "+aadhar+"%0A";
+message+="Phone: "+phone+"%0A%0A";
+}
+
+}
+
+var url="https://wa.me/917022187870?text="+message;
+window.open(url,"_blank");
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Family Trip – Ayodhya & Kashi Darshan</h1>
+
+<div class="section">
+
+<b>Travel Itinerary</b>
+
+<ul>
+<li>14th Mar BLR to Lucknow – 7:50 AM</li>
+<li>Lucknow to Ayodhya by TT Urbannia</li>
+<li>Darshan at Ram Temple – 14th Mar Evening</li>
+<li>Overnight stay at Ayodhya – Hotel Ramanjeneya</li>
+<li>15th Mar after breakfast drive to Kashi – visit Sarnath</li>
+<li>Check-in at Southern Grand</li>
+<li>Evening visit Kala Bhairava Temple</li>
+<li>16th Mar Kashi Temple Sparsh Darshan – 4 AM</li>
+<li>16th Mar Ganga Aarti – 5 PM</li>
+<li>17th Mar Kashi Temple Darshan</li>
+<li>17th Mar Return flight 4:30 PM – Kashi to BLR (7 PM)</li>
+</ul>
+
+</div>
+
+<table>
+
+<tr>
+<th>SLNO</th>
+<th>Name</th>
+<th>Aadhar ID</th>
+<th>Phone</th>
+</tr>
+
+<tr><td>1</td><td><input id="name1" value="Arun Nagraj"></td><td><input id="aadhar1" value="8703 3348 0840"></td><td><input id="phone1" value="9900262573"></td></tr>
+
+<tr><td>2</td><td><input id="name2" value="Anitha Patil"></td><td><input id="aadhar2" value="8359 4655 8883"></td><td><input id="phone2" value="9902291646"></td></tr>
+
+<tr><td>3</td><td><input id="name3" value="Archana Talamani"></td><td><input id="aadhar3" value="7246 9881 7964"></td><td><input id="phone3" value="9986275834"></td></tr>
+
+<tr><td>4</td><td><input id="name4" value="Aarav Arun"></td><td><input id="aadhar4" value="9797 9852 6472"></td><td><input id="phone4"></td></tr>
+
+<tr><td>5</td><td><input id="name5" value="Gangadhar Talamani"></td><td><input id="aadhar5" value="8256 6798 5395"></td><td><input id="phone5" value="9986703776"></td></tr>
+
+<tr><td>6</td><td><input id="name6" value="Umadevi Talamani"></td><td><input id="aadhar6" value="6582 1066 2644"></td><td><input id="phone6" value="9986703299"></td></tr>
+
+<tr><td>7</td><td><input id="name7" value="Sarvamanagala B R"></td><td><input id="aadhar7" value="5319 2210 9088"></td><td><input id="phone7"></td></tr>
+
+<tr><td>8</td><td><input id="name8" value="Basavangoudr R"></td><td><input id="aadhar8" value="7269 7447 4471"></td><td><input id="phone8"></td></tr>
+
+<tr><td>9</td><td><input id="name9" value="Sheela Ninganagoudr"></td><td><input id="aadhar9" value="5384 4572 02653"></td><td><input id="phone9" value="7348965242"></td></tr>
+
+<tr><td>10</td><td><input id="name10" value="Sharath Ramangoudr"></td><td><input id="aadhar10" value="8304 5269 6562"></td><td><input id="phone10" value="9886096134"></td></tr>
+
+<tr><td>11</td><td><input id="name11" value="Chetana Talamani"></td><td><input id="aadhar11" value="7609 0052 8667"></td><td><input id="phone11" value="9663695695"></td></tr>
+
+<tr><td>12</td><td><input id="name12" value="Shardha Sharath Ramangoudr"></td><td><input id="aadhar12" value="9325 1377 7166"></td><td><input id="phone12"></td></tr>
+
+<tr><td>13</td><td><input id="name13" value="Gauri Ramangoudr"></td><td><input id="aadhar13" value="8238 5626 9096"></td><td><input id="phone13"></td></tr>
+
+</table>
+
+<button onclick="sendWhatsApp()">Submit</button>
+
+</div>
+
+</body>
+</html>
